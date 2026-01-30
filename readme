@@ -1,0 +1,14 @@
+## Install Instructions
+1. Clone the repository
+2. Create a virtual environment
+3. Activate the virtual environment
+4. Install dependencies from requirements.txt
+
+For macOS
+```
+git clone https://github.com/pryadavgrid/Python_Bootcamp.git
+cd Python_Bootcamp
+python3 -m venv bootcamp_venv
+source bootcamp_venv/bin/activate
+pip install -r requirements.txt
+```

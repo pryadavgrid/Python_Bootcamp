@@ -1,0 +1,23 @@
+Q .What's the difference between floating point and an integer?
+Ans. Integer (int)
+An integer is a whole number
+It has no decimal point
+Examples:10, -5, 0, 100
+
+Floating Point (float)
+A floating point number has a decimal point.
+it is used for numbers with fractions
+
+Examples: 10.5, -3.14, 0.0, 2.75
+
+Q. Why doesn't 0.1+0.2-0.3 equal 0.0 ?
+Ans. Because floating point numbers are not stored exactly in the computer.
+Simple explanation
+Computers use binary (0 and 1) to store numbers
+Some decimal numbers (like 0.1, 0.2, 0.3) cannot be represented exactly in binary
+So Python stores a very small error.
+" 0.1 + 0.2 ≠ exactly 0.3 "
+
+How to handle this?
+Use round():
+" round(0.1 + 0.2 - 0.3, 10) " 
