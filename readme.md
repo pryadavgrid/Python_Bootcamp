@@ -1,5 +1,3 @@
----
-
 # 🐍 Python Bootcamp – Zero to Hero
 
 ## 📌 Summary
@@ -9,7 +7,6 @@ The goal of this project is to build strong Python fundamentals by writing hands
 
 This repository will be updated regularly as I progress through the course.
 
----
 
 ## 📘 About the Course
 
