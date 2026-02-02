@@ -48,10 +48,28 @@
 
 import random
 
-my_list = [1,2,3,4,5,6,7,8,9,0]
-# random.choice is return a item from list
-print(random.choice(my_list))
+# my_list = [1,2,3,4,5,6,7,8,9,0]
+# # random.choice is return a item from list
+# print(random.choice(my_list))
 
-# random.shuffle return entire list after change the order of elements
-random.shuffle(my_list)
-print(my_list)
+# # random.shuffle return entire list after change the order of elements
+# random.shuffle(my_list)
+# print(my_list)
+
+# my_list = ['O',' ', ' ']
+
+# while True:
+#     user_choice = int(input('Choose a number : '))
+#     if user_choice < 0 or user_choice>2:
+#         print("You Choose Wrong Number!!")
+#         break
+#     else:
+#         random.shuffle(my_list)
+#         # if user_choice == my_list.index('O'):
+#         if my_list[user_choice]== 'O':
+#             print("You Win !!", my_list)
+#             break
+#         else:
+#             print("Sorry!!", my_list)
+
+
