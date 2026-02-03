@@ -233,3 +233,151 @@
 # # Check
 # print(almost_there(210))
 # # Check
+
+
+
+# FIND 33:
+# Given a list of ints, return True if the array contains a 3 next to a 3 somewhere.
+
+# has_33([1, 3, 3]) → True
+# has_33([1, 3, 1, 3]) → False
+# has_33([3, 1, 3]) → False
+
+
+# def has_33(nums):
+#     first_three_index = nums.index(3)
+#     next_index_of = first_three_index + 1
+#     if nums[next_index_of]==3:
+#         return True
+#     else:
+#         return False
+
+# # Check
+# print(has_33([1, 3, 3]))
+# # Check
+# print(has_33([1, 3, 1, 3]))
+# # Check
+# print(has_33([3, 1, 3]))
+
+# print(has_33([3, 3, 3]))
+
+
+# PAPER DOLL: Given a string, return a string where for every character in the original there are three characters
+# paper_doll('Hello') --> 'HHHeeellllllooo'
+# paper_doll('Mississippi') --> 'MMMiiissssssiiippppppiii'
+
+# def paper_doll(text):
+#     new_text = ""
+#     for i in text:
+#         for j in range(3):
+#             new_text = new_text + i
+
+#     return new_text
+
+# # Check
+# print(paper_doll('Hello'))
+# # Check
+# print(paper_doll('Mississippi'))
+
+# BLACKJACK: Given three integers between 1 and 11, if their sum is less than or equal to 21, return their sum. If their sum exceeds 21 and there's an eleven, reduce the total sum by 10. Finally, if the sum (even after adjustment) exceeds 21, return 'BUST'
+# blackjack(5,6,7) --> 18
+# blackjack(9,9,9) --> 'BUST'
+# blackjack(9,9,11) --> 19
+# def blackjack(a,b,c):
+#     sum_of_number = a+b+c
+
+#     if sum_of_number > 21:
+#         if 11 in (a,b,c):
+#             return sum_of_number - 10
+#         else :
+#             return "BUST" 
+        
+#     return sum_of_number
+# # Check
+# print(blackjack(5,6,7))
+# # Check
+# print(blackjack(9,9,9))
+# # Check
+# print(blackjack(9,9,11))
+
+
+# SUMMER OF '69: Return the sum of the numbers in the array, except ignore sections of numbers starting with a 6 and extending to the next 9 (every 6 will be followed by at least one 9). Return 0 for no numbers.
+# summer_69([1, 3, 5]) --> 9
+# summer_69([4, 5, 6, 7, 8, 9]) --> 9
+# summer_69([2, 1, 6, 9, 11]) --> 14
+# def summer_69(arr):
+#     sum_of_number = 0
+#     if (6 in arr) and (9 in arr):
+#         sixth_index = arr.index(6)
+#         ninth_index = arr.index(9)
+#         for i in range(len(arr)):
+#             # print(i, sixth_index, ninth_index)
+#             if i >= sixth_index and i<=ninth_index:
+#                 continue
+#             else:
+#                 sum_of_number = sum_of_number + arr[i]
+#     else:
+#         sum_of_number = sum(arr)
+        
+#     return sum_of_number
+
+# # Check
+# print(summer_69([1, 3, 5]))
+# # Check
+# print(summer_69([4, 5, 6, 7, 8, 9]))
+# # Check
+# print(summer_69([2, 1, 6, 9, 11]))
+
+
+# SPY GAME: Write a function that takes in a list of integers and returns True if it contains 007 in order
+#  spy_game([1,2,4,0,0,7,5]) --> True
+#  spy_game([1,0,2,4,0,5,7]) --> True
+#  spy_game([1,7,2,0,4,5,0]) --> False
+
+# def spy_game(nums):
+#     my_arr =[0,0,7]
+#     my_new_arr = []
+#     n=0
+#     for i in nums:
+#         if i == 0 or i==7:
+#             if my_arr[n] == i:
+#                 my_new_arr.append(i)
+#                 n=n+1
+
+#     # print(my_new_arr, my_arr)
+#     return my_arr == my_new_arr, 
+
+
+        
+
+# # Check
+# print(spy_game([1,2,4,0,0,7,5]))
+# # Check
+# print(spy_game([1,0,2,4,0,5,7]))
+# # Check
+# print(spy_game([1,7,2,0,4,5,0]))
+
+
+
+# COUNT PRIMES: Write a function that returns the number of prime numbers that exist up to and including a given number
+# count_primes(100) --> 25
+# By convention, 0 and 1 are not prime.
+
+# def count_primes(num):
+#     to_prime_number = 0
+#     for i in range(2, num):
+#         for j in range(2, i):
+#             if i%j == 0:
+#                 break
+#         else:
+#             to_prime_number = to_prime_number + 1
+    
+#     return to_prime_number
+
+        
+        
+                
+# # Check
+# print(count_primes(100))
+
+# print(len(10))
