@@ -1,31 +1,18 @@
-# my_decorator takes a function definition
-def my_decorator(fun):
+import time
 
-    # wrapper takes function arguments
+
+def timer(func):
     def wrapper(*args, **kwrgs):
-
-        # Extra logic (age check)
-        if args[1] == 25:
-            return fun(*args, **kwrgs)
-        
-        return "You are not eligible"
+        start_time = time.time()
+        result = func(*args, **kwrgs)
+        end_time = time.time()
+        print(f"The Function {func.__name__}, ran in {end_time-start_time}")
+        return result
     
     return wrapper
 
+@timer
+def example_function(n):
+    time.sleep(n)
 
-@my_decorator
-def my_functions(name, age):
-    print("This Is A Function")
-    return f"Hello {name}, Your age is {age}"
-
-
-print(my_functions("Prateek", 25))
-
-
-# How Decorator Works Behind the Scene
-# same work from line 19-20, We can use using @my_decorator
-# my_fun = my_decorator(my_functions)
-# print(my_fun("Prateek", 25))
-
-
-
+example_function(2)
