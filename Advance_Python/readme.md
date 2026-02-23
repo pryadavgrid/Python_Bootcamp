@@ -1,8 +1,3 @@
-Here is your **README.md** file content 👇
-(Simple English, clean structure, good for GitHub)
-
----
-
 # 📘 Introduction to Advanced Python Modules
 
 This repository contains notes and examples for **Advanced Python Modules**.

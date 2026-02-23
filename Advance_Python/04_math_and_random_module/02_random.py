@@ -19,7 +19,8 @@ random.seed(100)
 print(random.randint(1,100))
 print(random.randint(1,100))
 
+# it create list and choose a random number from population list and put one by one till k
+print(random.choices(population=numbers, k=6))
 
-
-
-
+# it create a list and choose a random number from population list and put one by one but not store duplicate
+print(random.choices(population=numbers, k=6))
