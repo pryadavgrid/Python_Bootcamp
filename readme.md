@@ -86,19 +86,3 @@ python3 filename.py
 * Virtual Environment (venv)
 * Git & GitHub
 
----
-
-## ✍️ Author
-
-**Prashant Yadav**
-Learning Python | Beginner to Developer 🚀
-
----
-
-## 📌 Note
-
-This repository is for **learning and practice purposes**.
-Feel free to explore, learn, and suggest improvements.
-
----
-
